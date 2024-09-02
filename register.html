@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>- Admin dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section"> - CUSTOMER REGISTRATION PAGE</h2>
+				</div>
+			</div>
+            
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-5">
+					<div class="login-wrap p-4 p-md-5">
+		      	<div class="icon d-flex align-items-center justify-content-center">
+		      		<span class="fa fa-user-o"></span>
+		      	</div>
+		      	<h3 class="text-center mb-4">Registration Form</h3>
+		               	
+						<form  class="login-form" method="POST">
+                        <input type="hidden" id="passport" class="form-control" name = "passport" value="../passports/passportAvatar.jpg" required >
+                        <input type="hidden" id="durations" class="form-control" name = "durations" value="1" required >
+                        <input type="hidden" id="price" class="form-control" name = "price" required >
+                        <input type="hidden" id="payment" class="form-control" name = "payment" value="Free" required >
+                        <input type="hidden" id="status" class="form-control" name = "status" value="ACTIVE" required >
+                        <input name="authocode" type="hidden" class="ed" id="authocode" readonly />
+                        <div class="form-group">
+		      			<input type="text" name="name" class="form-control rounded-left" placeholder="Enter your Fullname" required>
+		      		</div>
+		      		<div class="form-group">
+		      			<input type="text" name="email" class="form-control rounded-left" placeholder="Email Address" required>
+		      		</div>
+                    <div class="form-group">
+		      			<input type="text" name="phone" class="form-control rounded-left" placeholder="Enter your Mobile Number" pattern = "[0-9]+" required>
+		      		</div>
+		      		<div class="form-group">
+		      			<input type="text" name="referral" class="form-control rounded-left" placeholder="Referral Code (Optional)" >
+		      		</div>
+	            <div class="form-group d-flex">
+	              <input type="password" name="password" class="form-control rounded-left" placeholder="Password" required>
+	            </div>
+	            
+	            </div>
+	            <div class="form-group">
+	            	<button type="submit" name="submit" class="btn btn-primary rounded submit p-3 px-5">Sign Up</button>
+	            </div>
+	          </form>
+	        </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+
